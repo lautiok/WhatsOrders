@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    /* Establece el color de fondo según sea necesario */
+    z-index: 1000;
+    /* Asegura que el encabezado esté por encima del contenido */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    /* Ajusta la altura del encabezado según sea necesario */
+}
+
+header .logoPrincipal img {
+    width: 70px;
+    /* Ajusta el tamaño del logo según sea necesario */
+}
+
+header .barraNavegacion {
+    margin-left: 30px;
+    /* Ajusta el margen según sea necesario */
+    margin-top: 1rem;
+}
+
+header .barraNavegacion ul {
+    display: flex;
+}
+
+header .barraNavegacion li a {
+    margin-left: 20px;
+    /* Ajusta el espaciado del texto del enlace según sea necesario */
+    font-size: 1rem;
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.barraNavegacion ul li a.active {
+    color: #ff6600;
+    /* Cambia el color del texto del enlace activo */
+}
+
+/* Define la animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounce {
+    animation: bounce 1.4s ease-in-out;
+    /* 1s es la duración de la animación, ease-in-out para un movimiento más suave */
+}
+
+
+header .icoTelefono i {
+    font-size: 2.5rem;
+    color: #EAAB02;
+}
+
+header {
+    transition: background-color 0.3s ease;
+}
+
+header .logoPrincipal img,
+header .icoTelefono i,
+header .barraNavegacion li a {
+    transition: color 0.3s ease;
+}
+
+header .logoPrincipal img {
+    transition: width 0.3s ease;
+}
+
+header {
+    transition: background-color 0.3s ease;
+}
+
+header .logoPrincipal img,
+header .icoTelefono i,
+header .barraNavegacion li a {
+    transition: color 0.3s ease;
+}
+
+header .logoPrincipal img {
+    transition: width 0.3s ease;
+}
+
+.boton-circulo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #EAAB02;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Inicialmente, oculta el botón */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.boton-circulo.mostrar {
+    opacity: 1;
+    display: block;
+}
+
+.boton-circulo.ocultar {
+    opacity: 0;
+    display: none;
+}
+
+.boton-circulo a i {
+    font-size: 34px;
+    color: #ffffff;
+}
+
+
+.hero {
+    background-image: url(../img/fondo.png);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 7rem;
+}
+
+.hero .whatsorded .whats {
+    width: 1000px;
+}
+
+.hero .whatsorded {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .whatsorded a {
+    background-color: #EAAB02;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 260px;
+    /* Establece el ancho deseado del botón */
+    margin: 0 auto;
+    /* Centra el botón horizontalmente */
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+.hero .whatsorded a:hover {
+    background-color: #FFD700;
+}
+
+.hero .naranjo {
+    width: 200px;
+}
+
+.qSomos .informacionPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qSomos .informacionPrincipal h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenedorCirculo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.contenedorCirculo .tarjetaCirculo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCirculo .tarjetaCirculo .circulo {
+    background-color: #EAAB02;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCirculo .tarjetaCirculo .circulo h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    align-items: center;
+}
+
+.contenedorCirculo .tarjetaCirculo .infoAbajo {
+    margin-top: 10px;
+}
+
+.sobreNosotros {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sobreNosotros .queHacemos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.sobreNosotros .queHacemos p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sobreNosotros .queHacemos img {
+    width: 400px;
+    margin-right: 18rem;
+}
+
+.sobreNosotros .queHacemosg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.sobreNosotros .queHacemosg p {
+    margin-left: 16rem;
+    margin-right: 16rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sobreNosotros .queHacemosg img {
+    width: 400px;
+    margin-left: 18rem;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servicios h2 {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.servicios p {
+    font-size: 1.3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.btn {
+    padding: 1rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #EAAB02;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+footer .logoFooter img {
+    width: 600px;
+}
+
+footer .redesSociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .redesSociales a {
+    margin-left: 1rem;
+}
+
+footer .redesSociales a i {
+    font-size: 2rem;
+    color: #ffffff;
+}
