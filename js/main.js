@@ -53,17 +53,28 @@ window.addEventListener('scroll', () => {
         botonCirculo.classList.remove('mostrar');
     }
 });
-
 window.addEventListener('scroll', () => {
     const botonCirculo = document.querySelector('.boton-circulo');
-    const footer = document.querySelector('footer');
+    const footer = document.querySelector('.footer');
     const scrollPosition = window.scrollY;
+    const footerPosition = footer.getBoundingClientRect(); // Posición del footer
 
-    // Si la posición de desplazamiento es mayor que cierta cantidad y no hemos llegado al footer, muestra el botón
-    if (scrollPosition > 200 && scrollPosition < footer.offsetTop) {
-        botonCirculo.style.display = 'block';
+    // Mostrar u ocultar el botón basado en la posición de desplazamiento
+    if (scrollPosition > 200) {
+        botonCirculo.classList.add('mostrar');
+        botonCirculo.classList.remove('ocultar');
     } else {
-        botonCirculo.style.display = 'none';
+        botonCirculo.classList.add('ocultar');
+        botonCirculo.classList.remove('mostrar');
+    }
+
+    // Cambiar color del botón y del icono cuando llega al footer
+    if (footerPosition.top <= window.innerHeight && footerPosition.bottom >= 0) {
+        botonCirculo.style.backgroundColor = 'white';
+        botonCirculo.querySelector('a i').style.color = 'black';
+    } else {
+        botonCirculo.style.backgroundColor = '#EAAB02';
+        botonCirculo.querySelector('a i').style.color = 'white';
     }
 });
 

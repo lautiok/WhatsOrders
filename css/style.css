@@ -170,7 +170,7 @@ header .logoPrincipal img {
 }
 
 .boton-circulo a i {
-    font-size: 34px;
+    font-size: 30px;
     color: #ffffff;
 }
 
@@ -312,8 +312,7 @@ header .logoPrincipal img {
 
 .servicios {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -329,8 +328,15 @@ header .logoPrincipal img {
     margin-right: 10rem;
 }
 
+.buttonTr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn {
     padding: 1rem;
+
 }
 
 .btn a {
@@ -338,6 +344,13 @@ header .logoPrincipal img {
     color: #ffffff;
     font-size: 1.3rem;
     font-weight: 700;
+}
+
+.form-doc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
 }
 
 footer {
@@ -356,6 +369,7 @@ footer .redesSociales {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 footer .redesSociales a {
@@ -363,6 +377,6 @@ footer .redesSociales a {
 }
 
 footer .redesSociales a i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
 }
