@@ -176,7 +176,7 @@ header .logoPrincipal img {
 
 
 .hero {
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondo.webp);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
