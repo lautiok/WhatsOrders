@@ -226,6 +226,7 @@ header .logoPrincipal img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .qSomos .informacionPrincipal h1 {
@@ -379,4 +380,139 @@ footer .redesSociales a {
 footer .redesSociales a i {
     font-size: 1.5rem;
     color: #ffffff;
+}
+
+@media screen and (max-width: 1600px) {
+    main .hero .naranjo {
+        display: none;
+    }
+
+    main .sobreNosotros .queHacemos {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    main .sobreNosotros .queHacemos p {
+        margin: 1rem;
+    }
+
+    main .sobreNosotros .queHacemos img {
+        margin: 0;
+    }
+
+    main .sobreNosotros .queHacemosg {
+        flex-direction: column-reverse;
+    }
+
+    main .sobreNosotros .queHacemosg p {
+        margin: 1rem;
+    }
+
+    main .sobreNosotros .queHacemosg img {
+        margin: 0;
+    }
+
+    main .servicios {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    main .hero .whatsorded .whats {
+        width: 900px;
+    }
+
+
+    main .qSomos .contenedorCirculo {
+        flex-direction: column;
+        margin-top: 1rem;
+
+    }
+
+    main .qSomos .contenedorCirculo .tarjetaCirculo {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    main .hero .whatsorded .whats {
+        width: 700px;
+    }
+
+    main .hero .whatsorded {
+
+        align-items: center;
+    }
+
+    main .hero .whatsorded a {
+        margin: 0;
+        ;
+    }
+}
+
+@media screen and (max-width: 726px) {
+    main .hero {
+        padding: 4rem;
+    }
+
+    main .hero .whatsorded .whats {
+        width: 500px;
+    }
+
+    main .servicios .ofrecemos p {
+        margin: 1rem;
+    }
+
+    main .servicios .elegirnos p {
+        margin: 1rem;
+    }
+
+    header .icoTelefono {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main .hero .whatsorded .whats {
+        width: 350px;
+        margin-bottom: 1rem;
+    }
+
+    header {
+        position: relative;
+        top: 1;
+        width: auto;
+        background-color: white;
+        /* Establece el color de fondo según sea necesario */
+        z-index: 0;
+        /* Asegura que el encabezado esté por encima del contenido */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        /* Ajusta la altura del encabezado según sea necesario */
+    }
+
+    header .logoPrincipal {
+        margin: 0;
+    }
+
+    header .barraNavegacion {
+        margin-left: 0;
+        /* Ajusta el margen según sea necesario */
+        margin-top: 0;
+    }
+
+    header .barraNavegacion ul {
+        margin-right: 3rem;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    main .hero .whatsorded .whats {
+        width: 300px;
+    }
 }
